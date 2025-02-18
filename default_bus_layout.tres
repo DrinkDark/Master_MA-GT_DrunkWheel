@@ -1,0 +1,39 @@
+[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://cx32rxxrken45"]
+
+[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_8mx8f"]
+resource_name = "Phaser"
+rate_hz = 0.2
+feedback = 0.9
+
+[sub_resource type="AudioEffectPanner" id="AudioEffectPanner_v6yvj"]
+resource_name = "Panner"
+
+[resource]
+bus/1/name = &"game_sound"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = -17.9849
+bus/1/send = &""
+bus/1/effect/0/effect = SubResource("AudioEffectPhaser_8mx8f")
+bus/1/effect/0/enabled = true
+bus/1/effect/1/effect = SubResource("AudioEffectPanner_v6yvj")
+bus/1/effect/1/enabled = true
+bus/2/name = &"object_sound"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = -4.63337
+bus/2/send = &"Master"
+bus/3/name = &"menu_sound"
+bus/3/solo = false
+bus/3/mute = false
+bus/3/bypass_fx = false
+bus/3/volume_db = -4.25003
+bus/3/send = &"Master"
+bus/4/name = &"voix_sound"
+bus/4/solo = false
+bus/4/mute = false
+bus/4/bypass_fx = false
+bus/4/volume_db = -0.030508
+bus/4/send = &"Master"
